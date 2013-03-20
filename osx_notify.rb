@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+require 'terminal-notifier'
+
 Plugin.create(:osx_notify) do
   on_favorite do |service, user, message|
     if message.from_me?
